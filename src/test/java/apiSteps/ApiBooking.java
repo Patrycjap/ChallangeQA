@@ -41,6 +41,6 @@ public class ApiBooking {
         String number = new ApiClass().TakeTokenNumberFromJson(json);
         Response response = ApiClass.DeleteBooking(number);
         int statusCode = response.getStatusCode();
-        Assert.assertEquals(statusCode, 200);
+        Assert.assertEquals(200, statusCode);
     }
 }
